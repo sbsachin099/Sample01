@@ -11,22 +11,22 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                // Example: Maven dependency installation
+                // Maven dependency installation
                 sh 'mvn clean install'
             }
         }
 
         stage('Run Tests') {
             steps {
-                // Example: Run test cases (adjust as per your test framework and commands)
-                sh 'mvn test'  // Replace with your actual test execution command
+                // Run test cases
+                sh 'mvn test'  // Adjust as per your Maven project setup
             }
         }
     }
 
     post {
         always {
-            // Cleanup steps if needed
+            echo 'Pipeline completed'  // Example: Echo statement for completion
         }
     }
 }
