@@ -5,12 +5,12 @@
       <![CDATA[Hi Sachin : this is sceond test method]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-06-24T08:54:12 IST" name="Demo Test suite" finished-at="2024-06-24T08:55:32 IST" duration-ms="79800">
+  <suite started-at="2024-06-24T12:12:32 IST" name="Demo Test suite" finished-at="2024-06-24T12:13:26 IST" duration-ms="53947">
     <groups>
     </groups>
-    <test started-at="2024-06-24T08:54:12 IST" name="Test on Firefox" finished-at="2024-06-24T08:55:32 IST" duration-ms="79800">
+    <test started-at="2024-06-24T12:12:32 IST" name="Test on Firefox" finished-at="2024-06-24T12:13:26 IST" duration-ms="53947">
       <class name="test_Cases.Test_login">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:test_Cases.Test_login@60dcc9fe]" started-at="2024-06-24T08:54:12 IST" name="setup" finished-at="2024-06-24T08:55:05 IST" duration-ms="52095" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:test_Cases.Test_login@60dcc9fe]" started-at="2024-06-24T12:12:33 IST" name="setup" finished-at="2024-06-24T12:13:00 IST" duration-ms="27754" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,18 +21,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_login()[pri:1, instance:test_Cases.Test_login@60dcc9fe]" started-at="2024-06-24T08:55:05 IST" name="test_login" finished-at="2024-06-24T08:55:26 IST" duration-ms="21084" status="PASS">
+        <test-method signature="test_login()[pri:1, instance:test_Cases.Test_login@60dcc9fe]" started-at="2024-06-24T12:13:00 IST" name="test_login" finished-at="2024-06-24T12:13:20 IST" duration-ms="19956" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_login -->
-        <test-method signature="disp()[pri:2, instance:test_Cases.Test_login@60dcc9fe]" started-at="2024-06-24T08:55:26 IST" name="disp" finished-at="2024-06-24T08:55:26 IST" duration-ms="3" status="PASS">
+        <test-method signature="disp()[pri:2, instance:test_Cases.Test_login@60dcc9fe]" started-at="2024-06-24T12:13:20 IST" name="disp" finished-at="2024-06-24T12:13:20 IST" duration-ms="2" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Hi Sachin : this is sceond test method]]>
             </line>
           </reporter-output>
         </test-method> <!-- disp -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:test_Cases.Test_login@60dcc9fe]" started-at="2024-06-24T08:55:26 IST" name="teardown" finished-at="2024-06-24T08:55:32 IST" duration-ms="6389" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test_Cases.Test_login@60dcc9fe]" started-at="2024-06-24T12:13:20 IST" name="teardown" finished-at="2024-06-24T12:13:26 IST" duration-ms="6001" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
