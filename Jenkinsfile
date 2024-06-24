@@ -1,16 +1,17 @@
 pipeline {
     agent any
+    
     stages {
         stage('Build') {
             steps {
                 // Commands to build your project (e.g., compiling code)
-                sh 'mvn clean package' // Example for Maven project
+                bat 'mvn clean package' // Use 'bat' instead of 'sh' for Windows
             }
         }
         stage('Test') {
             steps {
                 // Commands to run your test cases
-                sh 'mvn test' // Example for Maven project
+                bat 'mvn test' // Use 'bat' instead of 'sh' for Windows
             }
         }
     }
