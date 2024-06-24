@@ -1,17 +1,38 @@
 pipeline {
     agent any
+    
     stages {
-        stage('Build') {
+        stage('Checkout') {
             steps {
-                // Commands to build your project (e.g., compiling code)
-                sh 'mvn clean package' // Example for Maven project
+                // Checkout code from GitHub repository
+                git branch: 'main', url: 'https://github.com/sbsachin099/Sample01.git'
             }
         }
+        
+        stage('Build') {
+            steps {
+                // Build the Maven project
+                sh 'mvn clean package'
+            }
+        }
+        
         stage('Test') {
             steps {
-                // Commands to run your test cases
-                sh 'mvn test' // Example for Maven project
+                // Run the tests
+                sh 'mvn test'
             }
+        }
+    }
+    
+    post {
+        success {
+            echo 'Pipeline successfully completed!'
+        }
+        failure {
+            echo 'Pipeline failed :('
+        }
+        always {
+            echo 'Pipeline finished.'
         }
     }
 }
