@@ -1,33 +1,17 @@
 pipeline {
     agent any
-    
-    tools {
-        maven 'Maven' // 'Maven' is the name of the Maven tool configured in Jenkins
-    }
-    
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/sbsachin099/Sample01.git'
-            }
-        }
-        
         stage('Build') {
             steps {
-                sh 'mvn clean install'
+                // Commands to build your project (e.g., compiling code)
+                sh 'mvn clean package' // Example for Maven project
             }
         }
-        
         stage('Test') {
             steps {
-                sh 'mvn test'
+                // Commands to run your test cases
+                sh 'mvn test' // Example for Maven project
             }
-        }
-    }
-    
-    post {
-        always {
-            echo 'Pipeline completed'
         }
     }
 }
